@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <h1>Streamlab OBS Electron project</h1>
+    <h2>Click following buttons to work with OBS</h2>
+    <button id="check-startup">Test OBS Startup</button>
+    <button id="show-obs-version">Show OBS version</button>
+    <button id="check-init">Check audio-video init</button>
+    <br><br><br>
+    <button id="start-stream">Start streaming</button>
+    <button id="stop-stream">Stop streaming</button>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>

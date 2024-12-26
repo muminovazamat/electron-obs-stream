@@ -1,0 +1,1 @@
+cmd_Release/obj.target/obsaddon.node := g++ -o Release/obj.target/obsaddon.node -shared -pthread -rdynamic -m64  -Wl,-soname=obsaddon.node -Wl,--start-group Release/obj.target/obsaddon/obsaddon.o -Wl,--end-group -lnode -L/usr/lib/x86_64-linux-gnu/ -lobs -lobs-frontend-api
